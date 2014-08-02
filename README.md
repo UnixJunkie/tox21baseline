@@ -19,9 +19,11 @@ Compiling the code
 ==================
 
 The code is self-contained in that all you need is a recent version of
-[Java](http://www.oracle.com/technetwork/java/) development kit (e.g.,
+the [Java](http://www.oracle.com/technetwork/java/) development kit (e.g.,
 JDK 6+) and [Apache ant](http://ant.apache.org). To compile the code,
-simply type ```ant``` at the command line.
+simply type ```ant``` at the command line. This step is optional as
+the code is automatically compiled when any of the commands below is
+invoked.
 
 
 Training the classifier
@@ -36,7 +38,8 @@ command line:
 ant train
 ```
 
-If all goes well, this command will generate the following 12 files:
+If all goes well, this command will generate the following 12 files,
+one for each respective model. 
 
 ```
 NR-AHR.props
@@ -53,8 +56,9 @@ SR-MMP.props
 SR-P53.props
 ```
 
-one for each respective model. To test these models, simply move them
-to the ```models``` directory (thereby replacing the old ones).
+To test these models, simply move them to the ```models``` directory
+(thereby replacing the old ones) and type ```ant predict``` (see
+below) to test out the new models.
 
 
 Generating predictions
@@ -83,8 +87,8 @@ SR-MMP.txt
 SR-P53.txt
 ```
 
-Each file is in the proper format for submission
-[here](https://tripod.nih.gov/tox21/challenge/submission.jsp).
+Each file is in the proper format for [submission]
+(https://tripod.nih.gov/tox21/challenge/submission.jsp).
 
 
 Contact
