@@ -88,7 +88,7 @@ SR-P53.txt
 ```
 
 Each file is in the proper format for [submission]
-(https://tripod.nih.gov/tox21/challenge/submission.jsp).
+(https://tripod.nih.gov/tox21/challenge/submissions.jsp).
 
 
 Contact
